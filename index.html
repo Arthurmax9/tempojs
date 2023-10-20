@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Previsão do tempo</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/3192/PNG/512/temperature_thermometer_cold_warm_hot_icon_194270.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="conteiner-tempo">
+
+        <input class="input-cidade" id="cidadeInput" placeholder="Digite o nome da cidade" >
+
+        <button class="input-buscar" type="button" onclick="cliqueiNobotao()">
+            <img class="imagem-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="lupa de procura">
+        </button>
+
+        <div class="conteiner-resultados">
+            <h2 id="cidade" class="cidade">
+                Temperatura
+            </h2>
+            
+            <p  class="temp"></p>
+            <p class="feels_like"></p>
+
+            <div class="indices-busca">
+                <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="modelo do tempo">
+                <p id="texto-previsao" class="texto-previsao"></p>
+            </div>
+            <p class="umidade"></p>
+
+            <p class="temp-max"></p>
+            <p class="temp-min"></p>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
